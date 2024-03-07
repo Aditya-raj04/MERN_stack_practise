@@ -54,3 +54,13 @@ let b = "               aditya_laheri                 "
 // console.log(b)
 console.log(b.trim())
 
+//splice() At position 2, add 2 elements:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.splice(2, 0, "Lemon", "Kiwi"))
+// At position 2, remove 2 items:
+const fruit = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+console.log(fruit.splice(2, 2));
+
+//split(separator[, limit]): Splits a string into an array of substrings.
+let c = "hello my name is aditya"
+console.log(c.split(" "));
