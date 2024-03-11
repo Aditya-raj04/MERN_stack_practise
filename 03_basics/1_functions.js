@@ -35,7 +35,7 @@ function loginUserMessage(username = "aditya"){
     return `${username} just logged in`
 }
 
-// console.log(loginUserMessage())
+console.log(loginUserMessage())
 // console.log(loginUserMessage("hitesh"))
 
 
