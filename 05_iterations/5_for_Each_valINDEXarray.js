@@ -25,7 +25,7 @@ console.log(item);
 
 
 coding.forEach(function (val,index,array){
-    // console.log(val,index,array)
+    console.log(val,index,array)
 })
 
 const mycoding = [
@@ -44,5 +44,5 @@ const mycoding = [
 ]
 
 mycoding.forEach(function(item){
-console.log(item.languageName)
+// console.log(item.languageName)
 })

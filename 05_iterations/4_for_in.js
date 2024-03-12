@@ -5,10 +5,7 @@ const myobj= {
 }
 
 for (const key in myobj) {
-    // if (Object.hasOwnProperty.call(object, key)) {
-        // const element = object[key];
-        
-    // }
+
     // console.log(myobj[key])   // this prints the values only
     // console.log(`${key}`)  //this gives keys
     // console.log(`${key} key for shortcut of ${myobj[key]}`)
