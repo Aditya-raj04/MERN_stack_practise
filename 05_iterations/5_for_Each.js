@@ -1,3 +1,5 @@
+//for each used in objects or arrays but msinly in objects
+
 const coding= ["js","cpp","golang","python","rust"];
 coding.forEach(element => {
     // console.log(element)
