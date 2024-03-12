@@ -21,5 +21,17 @@ map.set("USA","america")
 map.set("NEP","nepal")
 map.set("PAT","patna")
 map.set("PAT","patna")
-console.log(map)
-//maps are for unique value
+// console.log(map)  //maps are for unique value
+
+for (const [key,value] of map) {
+    // console.log(key,':-',value)
+}
+
+const myObj = {
+    game1 : "NFS",
+    game2: "pubg",
+    game3: "valorant"
+}
+for (const [name,game] of myObj) {
+    console.log(name,game)
+}
