@@ -1,4 +1,5 @@
 // filter method return a value so we have to store it
+// it contains compare operators
 let arr = [1,2,3,4,5,6,7,8,9]
 // const x = arr.filter( (val)=>val>5 )
 const x = arr.filter( 
@@ -31,6 +32,8 @@ const cities = [
  },
 ]
 let y = cities.filter((val)=>val.city === 'haryana' && val.year >=1900);
-console.log(y)
+// console.log(y)
+
+
 
 

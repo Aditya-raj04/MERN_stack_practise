@@ -1,4 +1,4 @@
-//for each used in objects or arrays but mainly in objects
+//for each method used in objects or arrays but mainly in objects
 // this is a method_function in arrays
 
 const coding= ["js","cpp","golang","python","rust"];

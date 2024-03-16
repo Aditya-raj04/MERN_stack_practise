@@ -12,7 +12,7 @@ let initialVal = 0;
 //     return acc+currentVal},0
 //     )
 
-// console.log(x);
+console.log(x);
 
 
 
@@ -32,4 +32,4 @@ const shoppingCart = [
 let sum = shoppingCart.reduce( (acc , item) => {
  return acc + item.price
 },0)
-console.log(sum);
+// console.log(sum);

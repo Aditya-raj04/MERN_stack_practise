@@ -6,7 +6,7 @@ console.log(newNum);
 
 // let val = [];
 // Numberz.forEach(element => {
-//     val.push(element+10)          //same as sbove but used for each
+//     val.push(element+10)          //same as sbove but used for_each method
 // });
 // console.log(val);
 
