@@ -1,4 +1,5 @@
-//for each used in objects or arrays but msinly in objects
+//for each used in objects or arrays but mainly in objects
+// this is a method_function in arrays
 
 const coding= ["js","cpp","golang","python","rust"];
 coding.forEach(element => {
@@ -46,3 +47,6 @@ const mycoding = [
 mycoding.forEach(function(item){
 // console.log(item.languageName)
 })
+
+
+

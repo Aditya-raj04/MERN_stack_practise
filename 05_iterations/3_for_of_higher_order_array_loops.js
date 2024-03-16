@@ -8,6 +8,9 @@ for (const num of arr) {
     if(num ==3)break;
     // console.log(num);
 }
+
+
+
 let greet = "i am aditya";
 for (const greeting of greet) {
     if(greeting == ' ')continue;
@@ -27,11 +30,16 @@ for (const [key,value] of map) {
     // console.log(key,':-',value)
 }
 
+
+
+
+//for of loop dont work in objects
 const myObj = {
     game1 : "NFS",
     game2: "pubg",
     game3: "valorant"
 }
 for (const [name,game] of myObj) {
-    console.log(name,game)
+    // console.log(name,game)
 }
+

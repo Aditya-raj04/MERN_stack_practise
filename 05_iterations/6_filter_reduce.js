@@ -5,19 +5,21 @@
 // })
 // console.log(value);
 
+// for each dont return any value
+// since for_each dont return thats why filter reduce method introduced
   
 //filter
 
 
 const mynum = [1,2,3,4,5,6,7,8,9,10];
 const newnums = mynum.filter( (val) => val > 4 )
-// console.log(newnums)
+console.log(newnums)
 
 let my = [];
 mynum.forEach( (val) => {
     if(val > 4)my.push(val);
 } )
-console.log(my);
+// console.log(my);
 
 
 const books = [
@@ -37,5 +39,5 @@ const books = [
   userBooks = books.filter( (bk) => { 
     return bk.publish >= 1995 && bk.genre === "History"
 })
-//   console.log(userBooks);
+  console.log(userBooks);
 
