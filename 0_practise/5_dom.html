@@ -1,0 +1,149 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom learning</title>
+    <style>
+  
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+ </head>
+ <body class="bg-black">
+    <div class="vr">
+        <h1 id="title" class="heading">
+            dom learning in chai aur code
+        </h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+        <input type="password" id="pass">
+        <h1>Loreit amet consectetur adipisicing elit.</h1>
+        <p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <ul>
+            <li class="list hello1">hello</li>
+            <li class="list hello2">two</li>
+            <li class="list hello3">three</li>
+            <li class="list hello4">four</li>
+        </ul>
+    </div>
+ </body>
+ </html>
+
+ <!-- document.getElementById('firstHeading').innerHTML = "<h1>chai aur code</h1>" -->
+ <!-- document.getElementById("title").getAttribute("id") -->  <!-- 'title' -->
+ <!-- document.getElementById("title").className     >>>>'heading' -->
+ <!-- document.getElementById("title").id >>>>>>>>'title' -->
+ <!-- const title = document.getElementById("title") ???  title.style.backgroundColor = "red" -->
+
+ <!-- 
+ title.innerHTML
+           dom learning in chai aur code\n        '
+
+title.textContent
+           dom learning in chai aur code\n        '
+title.innerText
+           dom learning in chai aur code' -->     
+
+<!-- innerTEXT sirf inner text show krta hai additional span ka content nhi
+innerCONTENT andar ka sab content show krta hai span ke andar ka bhi
+innerHTML me inner ka sab html bhi show krta hai span tag + uska content bhi sab -->
+
+
+<!-- document.getElementsByClassName("heading") -->
+
+
+<!-- document.querySelector("h1")   this shows the first elements present in the document like h1 in this -->
+<!-- document.querySelectorAll("#title")     this selects the id -->
+<!-- document.querySelectorAll(".heading")   this selects the class -->
+<!-- document.querySelector("input[type='password']") this selects the input_field -->
+<!-- document.querySelector("p:first-child") -->
+
+<!-- document.querySelector("ul")
+<ul>​…​</ul>​
+let mul = document.querySelector("ul")
+undefined
+mul.querySelector("li")
+
+let z = mul.querySelector("li")
+undefined
+z.style.backgroundColor = "yellow"
+'yellow'
+z.style.color = "black"
+'black' -->
+
+<!-- z.innerHTML
+'hello'
+z.innerHTML = "afitya"
+'aditya' -->
+
+
+<!-- queryselectorall -->
+<!-- ye array nhi deta valki node list deta hai -->
+
+<!-- document.querySelectorAll("li")
+NodeList(3) [li, li, li]
+let temp = document.querySelectorAll("li")
+undefined
+temp
+NodeList(3) [li, li, li]
+temp[0].style.color = "green";
+'green'
+temp[2].style.color = "green";
+'green -->
+
+
+<!-- let myh1 = document.querySelectorAll("h1")
+myh1.forEach(function(n){
+    n.style.color = "green"
+})
+myh1[0].forEach(function(n){
+    n.style.color = "yellow"
+}) -->
+
+
+<!-- getelementbyclassname -->
+<!-- it gives html collection -->
+
+<!-- let x = document.getElementsByClassName("list")
+undefined
+Array.from(x)
+(4) [li.list.hello1, li.list.hello2, li.list.hello3, li.list.hello4]
+let convertedArr = Array.from(x)  >>>>>now this is converted to array so i can use map,foreach e.t.c-->
+
+<!-- convertedArr.forEach(function(n){n.style.color="blue"}) -->
+<!-- let z = document.querySelectorAll("h2")
+z[0].style.backgroundColor="yellow"
+'yellow'
+z[0].innerHTML = "chai"
+'chai' -->
+
+
+
+let name = document.querySelectorAll('.mw-headline')
+name.forEach( function(h){
+    h.style.color = "green";
+    h.style.backgroundColor ="black";
+    h.style.padding = "30px"
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
