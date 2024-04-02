@@ -2,11 +2,15 @@
 
 const myCourses = {
     id:123,
-    couseInstructor : 'hitesh',
+    courseInstructor : 'hitesh',
     price:'999',
 }
-({couseInstructor:instructor} = myCourses);// Destructuring and assigning to instructor
-// console.log(myCourses.couseInstructor)
+const{courseInstructor} = myCourses;
+// const{courseInstructor:instruction} = myCourses;
+//  console.log(courseInstructor);
+
+({courseInstructor:instructor} = myCourses);// Destructuring and assigning to instructor
+// console.log(myCourses.courseInstructor)
 instructor = 'aditya';       //reassigning the value
 console.log(instructor);
 

@@ -29,10 +29,10 @@ const returned = Object.assign({},target,source);
 // console.log(returned);
 // console.log(target);
 // console.log(source);      
-// console.log(target === returned)  //false
+// console.log(target === returned)  //true
 
-
-
+const objj = {...target,...source};
+// console.log(objj);
 
 
 const users = [

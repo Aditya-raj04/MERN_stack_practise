@@ -1,12 +1,12 @@
 //1     {     singleton
-//          Object.caller      }
+//          Object.create(caller)      }
 
 //2{   object literal  }
 
-const mySym  = Symbol('key1'); 
+const mySym = Symbol('key1')
 
 const jsuser = {
-    [mySym]:'myKey1',        //symbol
+    [mySym]:'myKey1 aditya ka symbol',        //symbol
     name:"aditya",
     "full Name": 'aditya raj',
     age: 20,
@@ -21,7 +21,7 @@ const jsuser = {
 // console.log(jsuser['full Name'])
 // console.log(jsuser.full Name)       //only by above we can access
 
-// console.log(jsuser[mySym])       //symbol
+console.log(jsuser[mySym])       //symbol
 // console.log(typeof jsuser.mySym)
 // console.log(jsuser)
 
@@ -36,7 +36,8 @@ jsuser.greeting = function(){
 
 jsuser.greetingsTwo = function(){
     console.log(`hello JS user , ${this["full Name"]}`)
-    console.log(`aditya , ${this.email}`)
+    console.log(`aditya , ${this.email}`);
+    // return {};
 }
 
 // console.log(jsuser.greeting())
