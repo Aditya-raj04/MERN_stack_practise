@@ -9,8 +9,6 @@
 
 (() => {console.log("DB CONNECTED")})();
 
-(
-    function name(chai){
-        console.log(`DB CONNECTED TO ${chai}`)
-    }
-)("aditya");
+(function name(chai){console.log(`DB CONNECTED TO ${chai}`)})("aditya");
+
+((naam) => {console.log(`my name is ${naam}`)})("aditya hai mera naam");

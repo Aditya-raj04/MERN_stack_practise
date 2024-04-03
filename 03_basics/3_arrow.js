@@ -15,17 +15,22 @@ const user = {
 
 
 //////////////////////////////////////////////////////////////////////
-// function chai(){
-//     console.log(this)
-// }
-const chai = () =>{
+function chai(){
+    console.log(this)
+}
+const chai2 = () =>{
     let user = "aditya"
-    console.log(this.user)
+    console.log(this)
 }
 
-// chai()
+// chai();
+// chai2();
+// console.log(this);
 
-//globsl ke andar jo global object hai wo wimdow object hai
+
+
+
+//global ke andar jo global object hai wo window object hai jo empty hota hai lekin browser pe bohot o/p hote hai compared to in vs {}
 
 
 ///////////////////////////////       implicit return   //////////////////////
@@ -33,10 +38,9 @@ const chai = () =>{
 //     return num1+num2
 // }
 
-// let x = (num1,num2) => (num1+num2)
+// let x = (num1,num2) => (num1+num2)  //implicit
 
 const x = (num1,num2) => ({user:"aditya"})
-
 // console.log(x(2,3));
 
 // function a(){
@@ -47,4 +51,11 @@ const x = (num1,num2) => ({user:"aditya"})
 let a = () =>{
     console.log(this)
 }
-a()
+// a()
+
+
+() => {
+return this
+console.log(this)
+}
+xy()

@@ -42,7 +42,7 @@ if (true) {
 
 
 // ++++++++++++++++++ interesting ++++++++++++++++++
-
+//hoisting 
 
 console.log(addone(5))
 

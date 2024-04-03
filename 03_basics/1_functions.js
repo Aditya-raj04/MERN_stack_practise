@@ -6,9 +6,11 @@ function sayMyName(){
     console.log("E");
     console.log("S");
     console.log("H");
+    // return;
 }
 
-// sayMyName()
+// sayMyName();
+// console.log(sayMyName);
 
 // function addTwoNumbers(number1, number2){
 
@@ -35,16 +37,17 @@ function loginUserMessage(username = "aditya"){
     return `${username} just logged in`
 }
 
-console.log(loginUserMessage())
+// console.log(loginUserMessage())
 // console.log(loginUserMessage("hitesh"))
 
 
-function calculateCartPrice(val1, val2, ...num1){
+function calculateCartPrice(val1, ...num1){
+    //...num1 is a rest operator
     // console.log(num1);
     return num1;
 }
 
-console.log(calculateCartPrice(200, 400, 500, 2000));
+// console.log(calculateCartPrice(200, 400, 500, 2000));
 
 const user = {
     username: "hitesh",
@@ -52,10 +55,10 @@ const user = {
 }
 
 function handleObject(anyobject){
-    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.prices}`);
 }
 
-// handleObject(user)
+handleObject(user)
 // handleObject({
 //     username: "sam",
 //     price: 399
