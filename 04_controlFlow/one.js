@@ -1,4 +1,4 @@
-console.log("hello");
+
 // if
 const isUserloggedIn = true
 const temperature = 41

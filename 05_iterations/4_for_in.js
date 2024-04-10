@@ -1,15 +1,17 @@
+// for in     works in objects, arrays and strings
 const myobj= {
     js: "javascript",
-    cpp: "cpp",
-    rb: "ruby"
-}
+    cpp: "c++",
+    rb: "ruby",
+    swift:"swift by apple",
+};
 
 for (const key in myobj) {
 
     // console.log(myobj[key])   // this prints the values only
     // console.log(`${key}`)  //this gives keys
     // console.log(`${key} key for shortcut of ${myobj[key]}`)
-}
+};
 
 const programming = ["javascript","ruby","python","cpp","golang"];
 for (const name in programming) {
@@ -18,15 +20,15 @@ for (const name in programming) {
 }
 
 
-// const map = new Map()
-// map.set("IN","india")
-// map.set("USA","america")
-// map.set("NEP","nepal")
-// map.set("PAT","patna")
-// map.set("PAT","patna")
+const map = new Map()
+map.set("IN","india")
+map.set("USA","america")
+map.set("NEP","nepal")
+map.set("PAT","patna")
+map.set("PAT","patna")
 
-// for (const key in map) {
-    // console.log(key)this is not iterable
-// }
+for (const key in map) {
+    console.log(key)                 //this is not iterable
+}
 
 

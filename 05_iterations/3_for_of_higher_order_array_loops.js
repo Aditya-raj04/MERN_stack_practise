@@ -1,7 +1,9 @@
-//for of
+//for of works in strings and arrays ans Map Object
 
 //  ["","",""]
 //  [{},{},{}]
+
+// these Loops are used in Iteratable things like OBJECTS,STRING,ARRAY
 
 let arr = [1,2,3,4,5]
 for (const num of arr) {
@@ -13,8 +15,8 @@ for (const num of arr) {
 
 let greet = "i am aditya";
 for (const greeting of greet) {
-    if(greeting == ' ')continue;
-    // console.log(greeting);
+    if(greeting == ' ')break;
+    console.log(greeting);
 }
 
 //maps
@@ -24,7 +26,7 @@ map.set("USA","america")
 map.set("NEP","nepal")
 map.set("PAT","patna")
 map.set("PAT","patna")
-// console.log(map)  //maps are for unique value
+console.log(map)  //maps are for unique value
 
 for (const [key,value] of map) {
     // console.log(key,':-',value)
@@ -39,7 +41,7 @@ const myObj = {
     game2: "pubg",
     game3: "valorant"
 }
-for (const [name,game] of myObj) {
-    // console.log(name,game)
-}
+// for (const [name,game] of myObj) {
+//     console.log(name,game)
+// }
 
