@@ -7,10 +7,10 @@ let initialVal = 0;
 // acc + current,initialVal
 // )
 
-// const x = arr.reduce( function (acc,currentVal) {
-//     console.log(` accumlator:${acc}  current:${currentVal}`)
-//     return acc+currentVal},0
-//     )
+const x = arr.reduce( function (acc,currentVal) {
+    console.log(` accumlator:${acc}  current:${currentVal}`)
+    return acc+currentVal},0
+    )
 
 console.log(x);
 
@@ -32,4 +32,4 @@ const shoppingCart = [
 let sum = shoppingCart.reduce( (acc , item) => {
  return acc + item.price
 },0)
-// console.log(sum);
+console.log(sum);

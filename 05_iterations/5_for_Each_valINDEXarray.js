@@ -7,7 +7,7 @@ coding.forEach(element => {
     // console.log(element)
 })
 
-// coding.forEach( (val) => {console.log(val)})
+coding.forEach( (val) => {console.log(val)})
 
 
 // coding.forEach(
