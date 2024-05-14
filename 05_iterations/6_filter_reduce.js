@@ -54,3 +54,7 @@ const books = [
 
   let user = books.filter ( (bk) => bk.genre === 'History' && bk.edition >1998)
   console.log(user);
+
+
+  console.log(1>2>3);
+  console.log(3>2>1);
