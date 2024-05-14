@@ -1,4 +1,4 @@
-//for of works in strings and arrays ans Map Object
+//for of works in strings and arrays and ______ Map Object
 
 //  ["","",""]
 //  [{},{},{}]
@@ -9,6 +9,7 @@ let arr = [1,2,3,4,5]
 for (const num of arr) {
     if(num ==3)break;
     // console.log(num);
+    
 }
 
 
@@ -16,7 +17,7 @@ for (const num of arr) {
 let greet = "i am aditya";
 for (const greeting of greet) {
     if(greeting == ' ')break;
-    console.log(greeting);
+    // console.log(greeting);
 }
 
 //maps
@@ -26,16 +27,17 @@ map.set("USA","america")
 map.set("NEP","nepal")
 map.set("PAT","patna")
 map.set("PAT","patna")
-console.log(map)  //maps are for unique value
+console.log(map)  //maps are for unique value   //does'nt work for duplicate key nd value like in arrays;
 
 for (const [key,value] of map) {
-    // console.log(key,':-',value)
+    console.log(key,':-',value);
+    // console.log(value);
 }
 
 
 
 
-//for of loop dont work in objects
+//for of loop don't work in objects
 const myObj = {
     game1 : "NFS",
     game2: "pubg",

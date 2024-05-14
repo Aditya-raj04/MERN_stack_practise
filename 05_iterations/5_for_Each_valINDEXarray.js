@@ -1,13 +1,14 @@
 //for each method fn used in objects or arrays but mainly in objects
+//mostly used in ARRAYs
 // this is a method_function in arrays
 //  a callback function
 
 const coding= ["js","cpp","golang","python","rust"];
-coding.forEach(element => {
+// coding.forEach(element => {
     // console.log(element)
-})
+// })
 
-coding.forEach( (val) => {console.log(val)})
+// coding.forEach( (val) => {console.log(val)})
 
 
 // coding.forEach(
@@ -25,9 +26,9 @@ console.log(item);
 
 
 
-coding.forEach(function (val,index,array){
-    // console.log(val,index,array);
-})
+// coding.forEach(function (val,index,array){
+    console.log(val,index,array);
+// })
 
 
 
@@ -37,7 +38,7 @@ coding.forEach(function (val,index,array){
 const mycoding = [
     {
         languageName:"c++",
-        languageFileName:"python"
+        languageFileName:"cpp"
      },
     {
         languageName:"javascript",
@@ -45,13 +46,13 @@ const mycoding = [
     },
     {
         languageName:"golang",
-        languageFileName:"ruby"
+        languageFileName:"microsoft"
     }
 ]
 
 mycoding.forEach(function(item){
-console.log(item.languageName);
-console.log(item.languageFileName)
+// console.log(item.languageName);
+// console.log(item.languageFileName)
 })
 
 

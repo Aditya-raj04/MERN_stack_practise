@@ -1,4 +1,6 @@
 // for in     works in objects, arrays and strings
+//in string this loop gives the indexes if we want then we can access item using these indexes
+
 const myobj= {
     js: "javascript",
     cpp: "c++",
@@ -7,6 +9,8 @@ const myobj= {
 };
 
 for (const key in myobj) {
+    // console.log(key);
+    // console.log(myobj);
 
     // console.log(myobj[key])   // this prints the values only
     // console.log(`${key}`)  //this gives keys
@@ -15,8 +19,8 @@ for (const key in myobj) {
 
 const programming = ["javascript","ruby","python","cpp","golang"];
 for (const name in programming) {
-//    console.log(name)
-// console.log(programming[name])
+//    console.log(name);
+console.log(name,programming[name]) //programming[0] or programming[name] = javascript
 }
 
 
@@ -28,7 +32,7 @@ map.set("PAT","patna")
 map.set("PAT","patna")
 
 for (const key in map) {
-    console.log(key)                 //this is not iterable
+    // console.log(key)                 //this is not iterable
 }
 
 

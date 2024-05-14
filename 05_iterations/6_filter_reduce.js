@@ -20,14 +20,14 @@ const value = coding.forEach( (item) => {
 
 const mynum = [1,2,3,4,5,6,7,8,9,10];
 const newnums = mynum.filter( (val) => val > 4 )
-console.log(newnums)
+// console.log(newnums)
 
 
 let my = [];
 mynum.forEach( (val) => {
     if(val > 4)my.push(val);
 } )
-// console.log(my);
+console.log(my);
 //same as above but we have used if and push using for_each
 
 
