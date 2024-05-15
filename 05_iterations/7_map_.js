@@ -9,7 +9,7 @@ const newNum = Numberz.map( (val) => val + 10);
 
 let value = [];
 Numberz.forEach( element => {
-    value.push(element+10)          //same as sbove but used for_each method
+    value.push(element+10)          //same as above but used for_each method
 });
 console.log(value);
 
