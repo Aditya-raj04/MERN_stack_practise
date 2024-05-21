@@ -8,22 +8,24 @@
         .bg-black{
             background: #000;
             color: white;
+            
         }
     </style>
 </head>
 <body class="bg-black">
         <div >
-            <h1 class = "heading" id="title">DOM learining on chai aur code</h1>
+            <h1 class = "heading" id="title">DOM learining on chai aur code <span style="display:none">TEXTING TEXT</span></h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <h1>Lorem ipsum dolor sit amet.</h1>
             <h1>Lorem ipsum dolor sit amdfgdgdgdgfdet.</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio similique consequuntur deleniti ullam aperiam numquam, eos eius enim odit voluptatibus!</p>
             <h1>dfgdgdfgdfgdfgdfgdfLordfgdgdfem ipsumfdgdgdfgd dolor sit amet.</h1>
-            <input type="text">
+            <input placeholder="enter here" type="text">
             <ul>
-                <li>one</li>
-                <li>two</li>
-                <li>three</li>
+                <li class="list-item">one</li>
+                <li class="list-item">two</li>
+                <li class="list-item">three</li>
+                <li class="list-item">four</li>
             </ul>
         </div>
 </body>
@@ -33,3 +35,67 @@
 <!-- innertext me sab kuch dikhayega lekin dipsay hidden wala nhi -->
 <!-- innercontent me sab kuch dikhayega hidden wala bhi  -->
 <!-- innerHTML me sab kuch html ke andar wala dega  -->
+
+
+
+<!-- getElementById  
+document.getElementById("title").innerHTML = "hello aditya raj";
+document.getElementById("title").id           //'title';
+document.getElementById("title").className    //'heading';
+
+document.getElementById("title").getAttribute("class")    //heading;
+document.getElementById("title").getAttribute("id")  //title;
+
+document.getElementById("title").setAttribute("id","hello-jee");
+const x = document.getElementById("title");
+x.style.backgroundColor="green";
+
+
+x.innerContent  :it gives full even if they are styles display:none
+x.innerText   :it gives only visible 
+x.innerHTML  :it gives full html 
+
+
+document.getElementsByClassName("heading"); : it returns HTMLcollection
+
+    document.querySelector("h1");   :it gives just the first h1 tag
+    document.querySelector(".heading");
+    document.querySelector("#title");
+    document.querySelector('input[type="text"]');
+    document.querySelector('p:first-child');
+
+    const myul = document.querySelector("ul");
+    const turngreen = myul.querySelector("li");
+    turngreen.style.backgroundcolor = "green";
+
+
+    document.getElementsByClassName("list-item");  //gives htmlcollection
+    const tempClass = document.getElementsByClassName("list-item");
+    //to use forEach we convert this into arrays
+    Array.from(tempClass);  //now converted to array
+
+    const convertedArray = Array.from(tempClass);
+    convertedArray.forEach( (v) => v.style.color = "green");
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    document.querySelectorAll("h1"); :it gives all the h1 related tags in node-list
+
+    const myli = document.querySelectorAll("li");
+    myli.forEach( (val) => val.style.backgroundColor = "red");
+
+
+
+ -->
+
