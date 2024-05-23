@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code</title>
+</head>
+<body style="color:aliceblue;background-color: black;font-size: 40px">
+    <ul class="languages" id="myList">
+        <li>javascript</li>
+        <li>python</li>
+        <li>devops</li>
+        <li>golang</li>
+        <li>rust</li>
+    </ul>
+    
+</body>
+<script>
+    let myList = document.getElementById('myList');
+    let newElement = document.createElement('li');
+    newElement.innerHTML = "i am devil_____";
+    myList.appendChild(newElement);
+
+    //ye second aur optimised way hai text insert krne ke liye;
+    const addText = document.createTextNode(" i am Lucifer");
+    newElement.appendChild(addText);
+    myList.appendChild(newElement);
+
+    
+
+
+</script>
+</html>
