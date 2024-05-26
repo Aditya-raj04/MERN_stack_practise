@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom model</title>
+</head>
+<body style="background-color: black;color: white;font-size: 60px;">
+    <ul class="newClass" id="myList">
+        <li>golang</li>
+        <li>cpp</li>
+        <li>javascript</li>
+        <li>python</li>
+    </ul>
+</body>
+<script>
+    let myNewList = document.getElementById("myList");
+    let list = document.createElement("li");
+    list.innerHTML="aditya raj ki jaio ho";
+    myNewList.appendChild(list);
+
+</script>
+</html>

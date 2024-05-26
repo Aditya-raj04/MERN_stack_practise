@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom using function</title>
+</head>
+<body style="background-color: black;color: white;font-size: 60px;">
+    <ul class="myList">
+        <li>golang</li>
+        <li>cpp</li>
+        <li>javascript</li>
+        <li>python</li>
+        <li>hello</li>
+    </ul>
+    <button onclick="addLanguage()"></button>
+    <button onclick="addlang()"></button>
+</body>
+<script>
+    function addLanguage(languageName){
+        const name = document.createElement("li");
+        name.innerHTML = `${languageName}`;
+
+        let newList = document.querySelector(".myList");
+        newList.appendChild(name);
+    }
+
+
+    function addlang(lang){
+        let newlist = document.createElement("li");
+        newlist.appendChild(document.createTextNode(lang));
+
+        const listed =  document.querySelector(".myList");
+        listed.appendChild(newlist);
+
+        // let listed = document.querySelector(".myList");
+        // newlist.appendChild(listed)
+        // listed.appendChild(li);   
+    }
+
+//edit
+//innerhtml
+const secondLang = document.querySelector("li:nth-child(2)");
+// secondLang.innerHTML= "gojo";
+
+//replacewith
+const newLi = document.createElement("li");
+newLi.textContent = "gojo sotaru";
+secondLang.replaceWith(newLi);
+
+//edit  //outerhtml
+let firstlanguage = document.querySelector("li:first-child");
+firstlanguage.outerHTML = '<li>naruto uzumaki</li>';
+
+
+//remover
+let lastlanguage =  document.querySelector("li:last-child");
+lastlanguage.remove();
+
+</script>
+</html>

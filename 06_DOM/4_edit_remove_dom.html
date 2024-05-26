@@ -11,23 +11,36 @@
         <li>python</li>
         <li>devops</li>
         <li>golang</li>
-        <li>cpp</li>
-        <li>rust</li>
+        <!-- <li>cpp</li>
+        <li>rust</li> -->
     </ul>
     
 </body>
-<script>d 
-    let myList = document.getElementById('myList');
+<script>
     let newElement = document.createElement('li');
-    newElement.innerHTML = "i am devil_____";
-    myList.appendChild(newElement);
-
-    //ye second aur optimised way hai text insert krne ke liye;
-    const addText = document.createTextNode(" i am Lucifer");
-    newElement.appendChild(addText);
-    myList.appendChild(newElement);
+    // let myNewList = document.getElementById('myList');
+    // newElement.innerHTML = "i am devil_____";
+    // newElement.textContent = " i am devil";
+    // myNewList.appendChild(newElement);
 
     
+    //ye second aur optimised way hai text insert krne ke liye;
+   const addText = document.createTextNode(" i am Lucifer");
+    newElement.appendChild(addText);
+   myList.appendChild(newElement);
+
+
+
+
+    // function addLanguage(languageName){
+
+    //     const li = document.createElement("li");
+    //     li.innerHTML = `${languageName}`;
+
+    //     let listed = document.getElementById("myList");
+    //     listed.appendChild(li);
+
+    // }
 
 
 </script>
