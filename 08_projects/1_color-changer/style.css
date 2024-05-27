@@ -5,7 +5,8 @@ html {
   span {
     display: block;
   }
-  .canvas {
+
+  .canvas{
     margin: 100px auto 100px;
     width: 80%;
     text-align: center;
@@ -30,5 +31,8 @@ html {
   }
   #yellow {
     background: yellow;
+  }
+  #purple {
+    background: purple;
   }
   
