@@ -24,8 +24,11 @@ else{
  results.innerHTML = `<span>${bmi}</span>`;
 
  const outcome = document.querySelector("#lelo");
+
+
 if(bmi <= 18.6){
 outcome.innerHTML = "under weight";
+
 }
 else if(bmi >= 18.6 && bmi <= 24.9){
   outcome.innerHTML = "normal range"
