@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    //prevent default ka example hai ye
+    <title>preventDefault Link Example</title>
+    <script>
+        function handleLinkClick(event) {
+            event.preventDefault(); // Link ki default action ko rokta hai
+            alert("Link click ko roka gaya hai!");
+        }
+    </script>
+</head>
+<body>
+    <a href="https://www.google.com" onclick="handleLinkClick(event)">Click me</a>
+</body>
+</html>
