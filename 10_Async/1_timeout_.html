@@ -22,12 +22,13 @@ console.log("hello my name is aditya");
     }
 
   const changeMe =  setTimeout( sayMyName,1000);
-                    setTimeout( changeText,2000);
+  const changeTexts =  setTimeout( changeText,2000);
 
 
 //  clearTimeout(changeMe);
  document.querySelector("#stop").addEventListener("click",()=>{
     clearTimeout(changeMe);
+    clearTimeout(changeTexts);
     console.log("stop")
  })
 
