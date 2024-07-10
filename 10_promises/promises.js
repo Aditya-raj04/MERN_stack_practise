@@ -36,7 +36,7 @@
 
 
 
-mhjg
+
 
 //promise 3
 // const promiseThree = new Promise(function(resolve,reject){
@@ -125,7 +125,10 @@ resolve({username:"aditya raj",name:"bholi laheri"})
 // const response = await promise5;
 // console.log(response);
 // }
-// consumePromiseFive();
+// consumePromiseFive();   
+//in this method the promise is not handled gracefully but in the second it's done gracefully using try and catch
+
+
 
 //method 3
 async function consumePromiseFive(){
@@ -162,15 +165,16 @@ async function consumePromiseFive(){
   // getAllUsers();
 
   //same upar wale ko .then aur .catch se krna hai
-  fetch('https://jsonplaceholder.typicode.com/users')
-  .then((response)=>{
-return response.json()
-  }).then((uparwalekareturn)=>{
-    console.log(uparwalekareturn);
-  })
-   .catch((error)=>{
-    console.log(error);
-   })
+
+//   fetch('https://jsonplaceholder.typicode.com/users')
+//   .then((response)=>{
+// return response.json()
+//   }).then((uparwalekareturn)=>{
+//     console.log(uparwalekareturn);
+//   })
+//    .catch((error)=>{
+//     console.log(error);
+//    })
 
 
 
