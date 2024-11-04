@@ -29,7 +29,7 @@ let mobile ={
 }
 
 //arrays = 
-const heroes = ["shaktiman" , "dogra" , "ironman"]
+const heroes = ["shaktiman" , "naagraj" , "ironman"]
 
 //BigInt =
 const bigNumber = 345546442434n

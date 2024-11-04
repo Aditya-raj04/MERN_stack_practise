@@ -32,3 +32,5 @@ let account1 = "aditya";
 var account2 = "bholi";
 var account3 = 454;
 console.table([acc1,account1,account2,account3]);
+
+console.log(typeof NaN);
