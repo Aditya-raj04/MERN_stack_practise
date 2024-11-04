@@ -5,9 +5,9 @@ console.log("aditya");
 //strings
 //bigInt
 //undefined
-//null
+//null           standalone values
 //boolean
-//symbol
+//symbol        uniqueness
 
 //object
 
@@ -26,3 +26,9 @@ console.log(String(num));
 //"33abc" > NaN
 //true:1 ; false:0
 //
+
+const acc1 = "raja ji";
+let account1 = "aditya";
+var account2 = "bholi";
+var account3 = 454;
+console.table([acc1,account1,account2,account3]);
