@@ -1,7 +1,7 @@
 let a  = 3;
-console.log(a**a);
-console.log(a*a);
-console.log(+"");
+// console.log(a**a);
+// console.log(a*a);
+// console.log(+"");
 
 //js is a dynamically typed language.
 // primitive (data type)
@@ -14,7 +14,7 @@ console.log(+"");
 //symbol =
 const id = Symbol('123')
 const newid = Symbol('123')
-console.log(id === newid)
+// console.log(id === newid)
 
 //function  =
 const myfun = function(){
@@ -52,16 +52,16 @@ const hello = undefined;
 
 
 // typeof  NULL is object
-//non-primitive ka datatype object funtion or object arrray or object aata hai
+//non-primitive ka datatype object funtion or object array or object aata hai
 
 
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(((((Stacks AND Heaps)))))))))))@@@@@@@@@@@@@@@@@@@@@@@@@
-//Stacks and Heaps
+//Stacks (in primitive type)
 let userOne = 123;
 let userTwo = userOne
 userTwo = 98;
-console.log(userOne)
-console.log(userTwo)
+// console.log(userOne)
+// console.log(userTwo)
 
 
 let empOne = {
@@ -72,8 +72,8 @@ let empOne = {
 let empTwo = empOne;
 empTwo.name = "rahul";
 
-console.log(empOne.name);
-console.log(empTwo.name);
+// console.log(empOne.name);
+// console.log(empTwo.name);
 
 // in heap case or non-primitive type ke tym call by reference hai not the copy like in stacks so the actual value changes in the original also
 
@@ -93,7 +93,7 @@ function Person(name) {
   }
   
   // Output: function
-  console.log(typeof new Person('John')); // Output: object
-  console.log(Person.name);
+//   console.log(typeof new Person('John')); // Output: object
+//   console.log(Person.name);
   
 
