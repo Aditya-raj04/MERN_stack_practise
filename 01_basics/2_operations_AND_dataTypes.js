@@ -78,7 +78,7 @@ empTwo.name = "rahul";
 // in heap case or non-primitive type ke tym call by reference hai not the copy like in stacks so the actual value changes in the original also
 
 // IN NON-PRIMItive TYPE THE MEMORY WHERE THEY STORE IS IN HEAP}
-// IN PRIMITIVE TYPE THE MEMORY LOCARION STORED IS IN STACKS}
+// IN PRIMITIVE TYPE THE MEMORY LOCATION STORED IS IN STACKS}
 
 
 function myNamne(){

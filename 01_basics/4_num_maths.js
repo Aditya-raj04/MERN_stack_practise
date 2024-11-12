@@ -23,14 +23,14 @@ console.log(hundreds.toLocaleString('en-IN'))
 // #############################       maths              """"""""""""""""""""""""
 
 
-console.log(Math)
-// console.log(Math.round(4.6))
-// console.log(Math.abs(-8))
-// console.log(Math.ceil(5.5))
-// console.log(Math.floor(4.5))
-// console.log(Math.sqrt(7.9))
-// console.log(Math.pow(4,4))
-// console.log(Math.min(4,7,9,99))
+// console.log(Math)
+// console.log(Math.round(4.6))   //5
+// console.log(Math.abs(-8))      //8
+// console.log(Math.ceil(5.5))    //6
+// console.log(Math.floor(4.5))   //4
+// console.log(Math.sqrt(9))    //3
+// console.log(Math.pow(4,4))   //64
+// console.log(Math.min(4,7,9,99))  //4
 
 console.log(Math.random())
 console.log((Math.random()*10)+1)

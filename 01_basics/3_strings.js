@@ -8,28 +8,28 @@ console.log(`hello my name is ${name} and i am a ${job} at google`)   //using ba
                                                         //string interpolation
 
 
-const name1 = new String('bholi-raj-laheri')
+const name1 = new String('bholilaheri')
 // console.log(name1)
 // console.log(name1[0]);
 // console.log(name1.__proto__);
 
-console.log(name1.toUpperCase());
+// console.log(name1.toUpperCase());
 // console.log(name1.toLowerCase());
 // console.log(name1.trimEnd());
 // console.log(name1.length);
 // console.log(name1.charAt(3));
 // console.log(name1.indexOf('l'));
 
-console.log(name1.split('-'))
+// console.log(name1.split('-'))
 // split(separator[, limit]): Splits a string into an array of substrings.
 
 // #####################################################################
 
-const newName = name1.substring(0, 4);
-// console.log(newName);
+const newName = name1.substring(-10, 4);
+console.log(newName);
 
-const anotherName = name1.slice(-8, 4);
-// console.log(anotherName);
+const anotherName = name1.slice(-10, 4);
+console.log(anotherName);
 
 const new2Name = "     aditya_  @gmail.com   "
 // console.log(new2Name)
