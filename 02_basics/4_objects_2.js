@@ -20,6 +20,9 @@ const regularUser = {
 
 // console.log(regularUser.fullName.userName)
 
+
+
+
 // to assign to objects in one object by assign and spread...
 
 const target = { 1: "hello", 2: "aditya" };
@@ -58,7 +61,7 @@ console.log(users[0].name)    //aditya
 console.log(tindeUser)
 // console.log(Object.keys(tindeUser))      //o/p : in array
 console.log(Object.values(tindeUser.name))      //o/p : in array
-// console.log(Object.entries(tindeUser))
+// console.log(Object.entries(tindeUser))     //typeof bhi array hai
 
 console.log(tindeUser.hasOwnProperty('isLoggedIn'))
 // console.log(tindeUser.toString())
