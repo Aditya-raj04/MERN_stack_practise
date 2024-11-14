@@ -17,12 +17,12 @@ const all_heros = [...marvel,...dc]
 const another_array = [1,2,3,[34,56,67],34,[3,4,[56873,23]]]
 // console.log(another_array.flat(Infinity))
 
-// console.log(Array.isArray("hello"));
+// console.log(Array.isArray(["aditya",123]));
 // console.log(Array.from("aditya"))
-console.log(Array.from({name:"aditya"}))   //interesting
+console.log(Array.from({name:"aditya"}))   //interesting  //[]
 
 // const person = {name:"aditya",class:"four"};
-// console.log(Array.from(Object.values(person)));
+// console.log(Array.from(Object.keys(person)));   //.keys , .values, .entries
 
 
 
@@ -30,7 +30,7 @@ console.log(Array.from({name:"aditya"}))   //interesting
 let score1 = 200;
 let score2 = 400;
 let score3 = "kdjfhsjkfh";
-// console.log(Array.of(score1,score2,"rammesh",score3))
+console.log(Array.of(score1,score2,"rammesh",score3))
 
 
 let student = {
@@ -51,4 +51,22 @@ var obj = {
   var entries = Object.entries(obj);
   console.log(entries); 
   // Output: [["name", "Aditya"], ["age", 25], ["country", "India"]]
+  
+
+
+
+
+
+
+
+
+  const arrayLikeObject = {
+    0: 'apple',
+    3: 'banana',
+    4: 'mango',
+    length: 5
+  };
+  
+  const realArray = Array.from(arrayLikeObject);
+  console.log(realArray); // Output: ["apple", "banana", "mango"]
   

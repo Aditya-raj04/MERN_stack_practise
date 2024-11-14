@@ -1,14 +1,14 @@
 //dates
 // 1
 let myDate = new Date();
-// console.log(myDate.toLocaleDateString())
-console.log(myDate.toLocaleString())
 // console.log(myDate);
+// console.log(myDate.toLocaleDateString())
+// console.log(myDate.toLocaleString())
 // console.log(myDate.toString())
 // console.log(myDate.toDateString())
 // console.log(myDate.toISOString())
 // console.log(myDate.toLocaleTimeString())
-// console.log(typeof myDate)
+// console.log(typeof myDate)   //object
 
 // 2
 let myNewDate = new Date("01-14-2023")
@@ -37,6 +37,6 @@ let myOtherDate = new Date()
 myNewDate.toLocaleString('default', {
     weekday:"narrow",
     day:"2-digit",
-    timeZoneName:"short",
+    // timeZoneName:"short",
 })
 console.log(myNewDate)
