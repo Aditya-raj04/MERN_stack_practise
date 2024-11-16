@@ -6,8 +6,8 @@ const myCourses = {
     price:'999',
 }
 const{courseInstructor} = myCourses;
-// const{courseInstructor:instruction} = myCourses;
 //  console.log(courseInstructor);
+// const{courseInstructor:instructor} = myCourses;
 
 ({courseInstructor:instructor} = myCourses);// Destructuring and assigning to instructor
 // console.log(myCourses.courseInstructor)

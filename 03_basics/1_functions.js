@@ -1,4 +1,4 @@
-
+//objects and dom is most important in js
 function sayMyName(){
     console.log("H");
     console.log("I");
