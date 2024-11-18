@@ -23,8 +23,8 @@ function one(){
     }
     // console.log(website);
 
-     two()
-
+    two()
+    
 }
 
 // one()
@@ -52,7 +52,7 @@ function addone(num){
 
 
 
-addTwo(5)
+// addTwo(5)
 const addTwo = function(num){
     return num + 2
 }
