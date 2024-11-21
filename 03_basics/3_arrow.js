@@ -16,7 +16,7 @@ const user = {
 
 //////////////////////////////////////////////////////////////////////
 function chai(){
-    console.log(this)
+    console.log(this)      //function ke andar this use nhi kr sakte sirf object ke liye hai
 }
 const chai2 = () =>{
     let user = "aditya"
@@ -31,6 +31,7 @@ const chai2 = () =>{
 
 
 //global ke andar jo global object hai wo window object hai jo empty hota hai lekin browser pe bohot o/p hote hai compared to in vs {}
+//console ke andar jo global hai wo window return krta hai aur in node environment ek empty {} return krta hai
 
 
 ///////////////////////////////       implicit return   //////////////////////
@@ -51,11 +52,11 @@ const x = (num1,num2) => ({user:"aditya"})
 let a = () =>{
     console.log(this)
 }
-// a()
+// a();   //{}
 
 
-() => {
+(() => {
+   console.log(this)
 return this
-console.log(this)
-}
-xy()
+})()
+//iifee upar wala
