@@ -1,5 +1,7 @@
 //map
 //callback fn
+//return a new array
+//filter aur map dono ko for each ke madad se bhi kr sakte hai lekin wo return nhi kaerega
 
 let Numberz = [1,2,3,4,5,6,7];
 const newNum = Numberz.map( (val) => val + 10);
