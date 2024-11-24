@@ -1,10 +1,11 @@
-//for of works in strings and arrays and ______ Map in Object
+//for of works in strings and arrays , map and ______ Map in Object
 
 //  ["","",""]
 //  [{},{},{}]
 
 // these Loops are used in Iteratable things like OBJECTS,STRING,ARRAY
 
+//for of in arrays
 let arr = [1,2,3,4,5]
 for (const num of arr) {
     if(num ==3)break;
@@ -13,7 +14,7 @@ for (const num of arr) {
 }
 
 
-
+//for of in strings
 let greet = "i am aditya";
 for (const greeting of greet) {
     if(greeting == ' ')break;
@@ -29,14 +30,8 @@ map.set("PAT","patna")
 map.set("PAT","patna")
 console.log(map)  //maps are for unique value   //does'nt work for duplicate key nd value like in arrays;
 
-let x = {
-    pat:"patna",
-    nal:"nalanda",
-    hel:"hello"
-
-
-}
-for (const [key,value] of x) {
+//for of in maps
+for (const [key,value] of map) {
     console.log(key,':-',value);
     // console.log(value);
 }

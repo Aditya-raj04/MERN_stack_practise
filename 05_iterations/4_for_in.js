@@ -1,6 +1,7 @@
 // for in     works in objects, arrays and strings
 //in string this loop gives the indexes if we want then we can access item using these indexes
 
+//for in works in objects
 const myobj= {
     js: "javascript",
     cpp: "c++",
@@ -16,7 +17,7 @@ for (const key in myobj) {
     // console.log(`${key}`)  //this gives keys
     // console.log(`${key} key for shortcut of ${myobj[key]}`)
 };
-
+// for in works in strings
 const programming = ["javascript","ruby","python","cpp","golang"];
 for (const name in programming) {
 //    console.log(name);

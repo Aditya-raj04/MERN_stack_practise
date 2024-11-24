@@ -52,5 +52,23 @@ for (const num of arr) {
 let greet = "i am aditya";
 for (const greeting of greet) {
     if(greeting == ' ')continue;
-    console.log(greeting);
+    // console.log(greeting);
+}
+
+//for-in loop in object
+let obj = {
+    c: "c language",
+    py: "python",
+    js: "javascript",
+    swift: "swift by apple"
+}
+// for (const key in obj) {
+//     console.log(`the key is ${key} and value is ${obj[key]}`)
+// }
+
+
+// for-in loop in arrays
+const myar  = ["hello","peter","harry"];
+for (const key in myar) {
+console.log(myar[key]);
 }
