@@ -34,6 +34,23 @@ function enduser(anyobject){
 
 
 
+let arra = ["superman","batman","spiderman"]
+let a = 0;
+while(a < arra.length){
+    // console.log(`${arr[a]}`);
+    a++;
+}
 
 
+let arr = [1,2,3,4,5]
+for (const num of arr) {
+    // if(num ==3)break;
+    // console.log(num);
+    
+}
 
+let greet = "i am aditya";
+for (const greeting of greet) {
+    if(greeting == ' ')continue;
+    console.log(greeting);
+}

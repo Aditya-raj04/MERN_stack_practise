@@ -1,4 +1,4 @@
-//for of works in strings and arrays and ______ Map Object
+//for of works in strings and arrays and ______ Map in Object
 
 //  ["","",""]
 //  [{},{},{}]
@@ -29,7 +29,14 @@ map.set("PAT","patna")
 map.set("PAT","patna")
 console.log(map)  //maps are for unique value   //does'nt work for duplicate key nd value like in arrays;
 
-for (const [key,value] of map) {
+let x = {
+    pat:"patna",
+    nal:"nalanda",
+    hel:"hello"
+
+
+}
+for (const [key,value] of x) {
     console.log(key,':-',value);
     // console.log(value);
 }
