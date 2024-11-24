@@ -10,7 +10,7 @@ const value = coding.forEach( (item) => {
 
 
 // for_each don't return any value
-// since for_each dont return thats why [filter   and  reduce] method introduced
+// since for_each don't return thats why [filter   and  reduce] method introduced
   
 
 

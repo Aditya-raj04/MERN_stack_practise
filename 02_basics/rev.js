@@ -79,7 +79,7 @@ for (const key in myar) {
 // } )
 
 function printme(item,index,array){
-    console.log(item,index,array)
+    // console.log(item,index,array)
 }
 myar.forEach(printme)
 
@@ -99,7 +99,7 @@ const mycoding = [
 ]
 
 mycoding.forEach( (ind) => {
-console.log(`language: ${ind.languageFileName} ,shortcut:${ind.languageName}`)
+// console.log(`language: ${ind.languageFileName} ,shortcut:${ind.languageName}`)
 })
 
 
@@ -108,5 +108,13 @@ const obje = { name: "Aditya", age: 22, city: "Bihar" };
 // console.log(`${Object.entries(obje)}`)
 
 Object.keys(obje).forEach( (keys) => {
-    console.log(`${keys}: ${obje[keys]}`);
+    // console.log(`${keys}: ${obje[keys]}`);
   });
+
+
+
+  //filter map reduce
+// const coding= ["js","cpp","golang","python","rust"];
+const coding= [1,2,3,4,5,6]
+const xy = coding.filter( (item) => item > 4)
+console.log(xy)

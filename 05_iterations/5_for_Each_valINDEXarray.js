@@ -1,5 +1,6 @@
 //for each method fn used in objects or arrays but mainly in objects
 //mostly used in ARRAYs
+//does'nt return any value
 // this is a method_function in arrays
 // ..................................... a callback function    ^^^^^^^^^^^^^^^^^^^^^^^^^
 
