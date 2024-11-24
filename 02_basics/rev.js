@@ -68,7 +68,45 @@ let obj = {
 
 
 // for-in loop in arrays
-const myar  = ["hello","peter","harry"];
+const myar  = ["hello","peter","harry","aditya"];
 for (const key in myar) {
-console.log(myar[key]);
+// console.log(myar[key]);
 }
+
+//for-each loop in arrays
+// myar.forEach( (item)=>{
+// console.log(item)
+// } )
+
+function printme(item,index,array){
+    console.log(item,index,array)
+}
+myar.forEach(printme)
+
+const mycoding = [
+    {
+        languageName:"c++",
+        languageFileName:"cpp"
+     },
+    {
+        languageName:"javascript",
+        languageFileName:"bhailang"
+    },
+    {
+        languageName:"golang",
+        languageFileName:"microsoft"
+    }
+]
+
+mycoding.forEach( (ind) => {
+console.log(`language: ${ind.languageFileName} ,shortcut:${ind.languageName}`)
+})
+
+
+const obje = { name: "Aditya", age: 22, city: "Bihar" };
+
+// console.log(`${Object.entries(obje)}`)
+
+Object.keys(obje).forEach( (keys) => {
+    console.log(`${keys}: ${obje[keys]}`);
+  });

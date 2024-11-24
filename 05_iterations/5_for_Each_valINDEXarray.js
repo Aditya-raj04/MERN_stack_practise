@@ -1,7 +1,7 @@
 //for each method fn used in objects or arrays but mainly in objects
 //mostly used in ARRAYs
 // this is a method_function in arrays
-//  a callback function
+// ..................................... a callback function    ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 const coding= ["js","cpp","golang","python","rust"];
 // coding.forEach(element => {
