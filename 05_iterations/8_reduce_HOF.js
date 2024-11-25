@@ -33,3 +33,4 @@ let sum = shoppingCart.reduce( (acc , item) => {
  return acc + item.price
 },0)
 console.log(sum);
+

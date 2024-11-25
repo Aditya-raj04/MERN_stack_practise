@@ -147,4 +147,48 @@ console.log(qwe);
   const naya= array.map((val) =>{
  return val +20
   });
-  console.log(naya);
+//   console.log(naya);
+
+
+//reduce
+const arra1 = [1,2,3,4,5];
+let initialVal =  0;
+const val = arra1.reduce( (acccumlator,currentVal) =>{
+return acccumlator + currentVal;
+} , initialVal);
+
+console.log("sum is" ,val);
+
+
+let myobj = {a:1,n:2,c:3};
+const sum = Object.values(myobj).reduce((acc,cuv) => acc + cuv ,initialVal);
+console.log(sum);
+
+
+let ar = [
+    {
+        car:"hyundai",
+        price:"nhi a"
+    },
+    {
+        book:"rs agarwal",
+        price:200,
+    },
+    {
+        book:"rs agarwal",
+        price:600,
+    }
+]
+const total = ar.reduce((acc,cuv) =>{
+    if( typeof cuv.price === "number"){
+   return acc + cuv.price
+ }
+ else{
+    console.log("price error" , cuv.price)
+   return acc
+ }
+
+},initialVal);
+console.log( total)
+
+
