@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dom model</title>
+    <title >dom model</title>
 </head>
 <body style="background-color: black;color: white;font-size: 60px;">
+    <h1 id="title" class="hello">hello there im learning js from chai 
+         <span style="display: none;">test text</span>
+    </h1>
     <ul class="newClass" id="myList">
-        <li>golang</li>
-        <li>cpp</li>
-        <li>javascript</li>
-        <li>python</li>
+        <li class="myliclass">golang</li>
+        <li class="myliclass">cpp</li>
+        <li class="myliclass">javascript</li>
+        <li class="myliclass">python</li>
     </ul>
 </body>
 <script>
     let myNewList = document.getElementById("myList");
     let list = document.createElement("li");
-    list.innerHTML="aditya raj ki jaio ho";
+    list.innerHTML="aditya raj ki jai ho";
     myNewList.appendChild(list);
     console.log("hello")
 
