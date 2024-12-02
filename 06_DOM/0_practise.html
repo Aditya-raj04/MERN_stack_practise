@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title >dom model</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-size: 60px;
+            
+        }
+    </style>
 </head>
 <body style="background-color: black;color: white;font-size: 60px;">
-    <h1 id="title" class="hello">hello there im learning js from chai 
+    <!-- <h1 id="title" class="hello">hello there im learning js from chai 
          <span style="display: none;">test text</span>
     </h1>
     <ul class="newClass" id="myList">
@@ -14,15 +22,58 @@
         <li class="myliclass">cpp</li>
         <li class="myliclass">javascript</li>
         <li class="myliclass">python</li>
-    </ul>
+    </ul> -->
+
+    <div class="parent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+    </div>
 </body>
-<script>
+<!-- <script>
     let myNewList = document.getElementById("myList");
     let list = document.createElement("li");
     list.innerHTML="aditya raj ki jai ho";
     myNewList.appendChild(list);
     console.log("hello")
     console.log("hello")
+
+</script> -->
+
+<script>
+    // const parent = document.querySelector(".parent");
+    // console.log(parent.children);
+    // console.log(parent.children[2].innerHTML);
+
+
+//parent.children gives html collection
+for (let i = 0; i < parent.children.length; i++) {
+//    console.log(parent.children[i].innerHTML); 
+}
+
+parent.children[3].style.color = "green";
+
+console.log(parent.firstElementChild);
+// console.log(parent.lastElementChild);
+
+const dayOne = document.querySelector('.day');
+// console.log(dayOne.parentElement);
+
+
+// console.log("NODES :" ,parent.childNodes);
+
+
+
+
+<style>
+
+/* creating element */
+const div = document.createElement("div");
+console.log(div)
+
+</style>
+
 
 </script>
 </html>

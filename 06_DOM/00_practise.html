@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Model</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 60px;
+        }
+        .new-div {
+            background-color: gray;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hello</h2>
+</body>
+
+<script>
+    // Create a new div element
+    const div = document.createElement("div");
+
+    //add class and id to div
+
+    // div.id = "myID";
+    div.setAttribute("id","ID via set")  //widely used
+    // div.setAttribute("class","CLASS via set")
+    div.className = "main";
+
+div.style.backgroundColor = "green";
+div.style.border = "2px";
+div.style.padding = "20px"
+
+// div.innerHTML= "myself aditya"  //alternative
+const addText = document.createTextNode("myself aditya");
+div.appendChild(addText);
+
+
+document.body.appendChild(div)
+
+
+
+
+
+    console.log(div);
+</script>
+</html>
