@@ -26,11 +26,12 @@
 <script>
     // Create a new div element
     const div = document.createElement("div");
+    const para =  document.createElement("p");
 
     //add class and id to div
 
-    // div.id = "myID";
-    div.setAttribute("id","ID via set")  //widely used
+    // div.id = "myID";   //same as down
+    div.setAttribute("id","ID via setATTRIBUTE")  //widely used
     // div.setAttribute("class","CLASS via set")
     div.className = "main";
 
@@ -39,10 +40,13 @@ div.style.border = "2px";
 div.style.padding = "20px"
 
 // div.innerHTML= "myself aditya"  //alternative
-const addText = document.createTextNode("myself aditya");
-div.appendChild(addText);
+const addText = document.createTextNode("myself aditya in para");
+const addTexts = document.createTextNode("myself aditya in div");
 
+para.appendChild(addText);
+div.appendChild(addTexts)
 
+document.body.appendChild(para)
 document.body.appendChild(div)
 
 

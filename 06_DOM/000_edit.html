@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit and remove in dom</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 60px;
+        }
+        .language{
+            background-color: green;
+        }
+      
+    </style>
+</head>
+<body>
+    <ul class="language">
+          <li>javascript</li>
+          <li>python</li>
+          <li>devops</li>
+          <li>golang</li>
+          <li>cpp</li> 
+          <li> rust   </li> 
+    </ul>
+</body>
+<script>
+// Create a new <li> element
+    // const newLi = document.createElement("li");
+
+    // // Add text to the <li>
+    // const addText = document.createTextNode("myself new li");
+    // newLi.appendChild(addText);
+
+    // // Append <li> to the <ul>
+    // const ulElement = document.getElementsByClassName("language")[0]; // Select the <ul>
+    // ulElement.appendChild(newLi);
+
+    // console.log("New list item added!");
+
+
+
+
+
+
+
+    function addLanguage(addNewLanguage){
+
+        if (!addLanguage) {
+            console.error("Language name is missing!");
+            return;
+        }
+
+        const newLi = document.createElement("li")
+        const text = document.createTextNode(addNewLanguage)
+        newLi.appendChild(text);
+
+        const ul = document.getElementsByClassName("language")[0]
+        ul.appendChild(newLi);
+
+        console.log("hello jee")
+
+    }
+    // addLanguage("rust")
+
+
+    function addNewLanguage(addlang){
+   const newLi= document.createElement("li");
+   const x = document.createTextNode(addlang)
+   newLi.appendChild(x)
+
+   const ul = document.querySelector(".language");
+   ul.appendChild(newLi);
+
+    }
+    addNewLanguage("javascript developed by sun microsystem")
+   
+//edit
+const secondlang = document.querySelector("li:nth-child(2)");
+secondlang.innerHTML("hello")
+
+
+
+
+
+
+</script>
+</html>
