@@ -3,88 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>edit and remove in dom</title>
+    <title>Edit and Remove in DOM</title>
     <style>
         body {
             background-color: black;
             color: white;
             font-size: 60px;
         }
-        .language{
+        .language {
             background-color: green;
         }
-      
     </style>
 </head>
 <body>
     <ul class="language">
-          <li>javascript</li>
-          <li>python</li>
-          <li>devops</li>
-          <li>golang</li>
-          <li>cpp</li> 
-          <li> rust   </li> 
+        <li>javascript</li>
+        <li>python</li>
+        <li>devops</li>
+        <li>golang</li>
+        <li>cpp</li> 
+        <li>rust</li> 
     </ul>
-</body>
-<script>
-// Create a new <li> element
-    // const newLi = document.createElement("li");
+    <script>
+        // Function to add a new language
+        function addNewLanguage(addlang) {
+            const newLi = document.createElement("li");
+            const x = document.createTextNode(addlang);
+            newLi.appendChild(x);
 
-    // // Add text to the <li>
-    // const addText = document.createTextNode("myself new li");
-    // newLi.appendChild(addText);
-
-    // // Append <li> to the <ul>
-    // const ulElement = document.getElementsByClassName("language")[0]; // Select the <ul>
-    // ulElement.appendChild(newLi);
-
-    // console.log("New list item added!");
+            const ul = document.querySelector(".language");
+            ul.appendChild(newLi);
+        }
+        // addNewLanguage("javascript developed by sun microsystem");
 
 
 
+        // Edit the second language
+        const secondLang = document.querySelector("li:nth-child(2)");
+        // if (secondLang) {
+            // Modify the content of the second <li>
+            // secondLang.textContent = "Edited: Python is awesome!";
+        // }
 
-
-
-
-    function addLanguage(addNewLanguage){
-
-        if (!addLanguage) {
-            console.error("Language name is missing!");
-            return;
+        // Replace the second language with a new <li>
+        const newLi = document.createElement("li");
+        newLi.textContent = "New Language: Dart";
+        if (secondLang) {
+            secondLang.replaceWith(newLi)
         }
 
-        const newLi = document.createElement("li")
-        const text = document.createTextNode(addNewLanguage)
-        newLi.appendChild(text);
-
-        const ul = document.getElementsByClassName("language")[0]
-        ul.appendChild(newLi);
-
-        console.log("hello jee")
-
-    }
-    // addLanguage("rust")
 
 
-    function addNewLanguage(addlang){
-   const newLi= document.createElement("li");
-   const x = document.createTextNode(addlang)
-   newLi.appendChild(x)
-
-   const ul = document.querySelector(".language");
-   ul.appendChild(newLi);
-
-    }
-    addNewLanguage("javascript developed by sun microsystem")
-   
-//edit
-const secondlang = document.querySelector("li:nth-child(2)");
-secondlang.innerHTML("hello")
+        //edit new li
+        const firstlang = document.querySelector("li:nth-child(1)");
+        // firstlang.textContent = "naya language bhailang"
+        // firstlang.outerHTML = "<li>naya language bhai"
 
 
-
-
-
-
-</script>
+            //remove
+            const lastlang = document.querySelector('li:last-child')
+            lastlang.remove()
+    </script>
+</body>
 </html>
