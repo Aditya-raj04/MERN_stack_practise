@@ -75,16 +75,42 @@ const owl = document.getElementById("owl");
 owl.addEventListener("click" , (e)=>{ 
 
  // Get the current time
+ 
       const now = new Date();
       const time = now.toLocaleTimeString(); // Format the time
 
-    // Display the time in an alert
-alert(`You clicked the owl at: ${time}`)
+    // Displays the time in an alert
+    //  alert(`You clicked the owl at: ${time}`)
 
   // Get the current timestamp
   const timestamp = Date.now(); // Milliseconds since Unix Epoch
-      alert(`You clicked the owl at timestamp: ${timestamp}`);
+      // alert(`You clicked the owl at timestamp: ${timestamp}`);
 // console.log(e)
-})
+},false)
+
+//event propagation
+   document.getElementById("images").addEventListener("click", (e) => {
+      // console.log("click inside th ul");
+    },false);
+
+    document.getElementById("owl").addEventListener("click", (e) => {
+      // console.log("owl clicked");
+      // e.stopPropagation(); //ye preventDefault ke jaisa hai 
+    },true);
+
+
+
+//mini project    
+document.getElementById("images").addEventListener("click" , (e)=>{
+//console.log(e.target.parentNode); //for parent removal and tagname for tags like img ,li
+
+  let removeit = e.target.parentNode
+  if(e.target.tagName == "IMG"){
+    removeit.remove()
+  }
+ 
+  // removeit.parentNode.removeChild(removeit)   //same as above
+},false)
   </script>
+
 </html>

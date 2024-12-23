@@ -9,7 +9,7 @@
 
         //@@@@@@@@@@@@@@@@@@ ye sab ke baare me padhna hai #important @@@@@@@@@@@@@
     //timestamp  //type      //defaultPrevented
-    //targer     //toElement //srcElement //currentElement
+    //target     //toElement //srcElement //currentElement
     //clientX    //clientY   //screenX    //screenY
     //altKey     //ctrlKey   //shiftKey   //keyCode
 
@@ -19,6 +19,8 @@
     // },false);
 
 
+//event propagation ka do context hota hai 1>event bubbling 2>event capturing
+// event bubling default hota hai jo ki false hai
 
 
     // document.getElementById("images").addEventListener("click", (e) => {
