@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+            margin-top: 200px;
+            margin-left: 200px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="btn">stop</button>
+</body>
+<script>
+    const saymyname = function(){
+        document.querySelector("h1").innerHTML="my name is aditya"
+    }
+  const clear =   setTimeout(saymyname,2000)
+
+document.querySelector("#btn").addEventListener("click",(e)=>{
+clearTimeout(clear)
+})
+</script>
+</html>
