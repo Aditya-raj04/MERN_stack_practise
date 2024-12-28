@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Color Changing Background</title>
+    <style>
+      body {
+        background-color: #212121;
+        color: #fff;
+        text-align: center;
+        padding: 50px;
+        font-family: Arial, sans-serif;
+      }
+      button {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Start should change the Background color every second</h1>
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+    </div>
+
+    <script>
+      let intervalid; // To store the interval ID
+
+      // Function to generate a random hex color
+      const randomColor = function () {
+        return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0")}`;
+      };
+
+      const body = document.querySelector("body");
+
+      // Function to change the background color
+      const changecolor = function () {
+        body.style.backgroundColor = randomColor();
+      };
+
+      // Start the color-changing process
+      document.querySelector("#start").addEventListener("click", () => {
+        if (!intervalid) {
+          intervalid = setInterval(changecolor, 2000); // Change color every second
+        }
+      });
+
+      // Stop the color-changing process
+      document.querySelector("#stop").addEventListener("click", () => {
+        clearInterval(intervalid); // Clear the interval
+        intervalid = null; // Reset the interval ID
+      });
+    </script>
+  </body>
+</html>

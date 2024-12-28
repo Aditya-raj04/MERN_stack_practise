@@ -5,27 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             background-color: black;
             color: aliceblue;
             margin-top: 200px;
             margin-left: 200px;
-            
         }
     </style>
 </head>
 <body>
     <h1>chai aur code</h1>
-    <button id="btn">stop</button>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
 </body>
 <script>
-    const saymyname = function(){
-        document.querySelector("h1").innerHTML="my name is aditya"
-    }
-  const clear =   setTimeout(saymyname,2000)
+    let interval; // Declare the interval variable globally
 
-document.querySelector("#btn").addEventListener("click",(e)=>{
-clearTimeout(clear)
-})
+    const started = function() {
+        console.log("my name is Aditya Raj", Date.now());
+    };
+
+    const stopped = function() {
+        console.log("Stopped");
+    };
+
+    document.querySelector("#start").addEventListener("click", () => {
+        if (!interval) { // Prevent multiple intervals from being created
+            interval = setInterval(started, 1000);
+        }
+    });
+
+    document.querySelector("#stop").addEventListener("click", () => {
+        if (interval) {
+            clearInterval(interval);
+            interval = null; // Reset interval variable to allow restarting
+            stopped();
+        }
+    });
 </script>
 </html>
